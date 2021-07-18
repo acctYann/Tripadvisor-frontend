@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/fonts-icons.css" />
+    <link rel="icon" href="./favicon-tripadvisor.svg" />
+
+    <!-- Import de axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    >
+
+    <!-- Import du fichier main.js -->
+    <script src="./assets/js/main.js"></script>
+
+    <title>Tripadvisor</title>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/48cd975580.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <img
+          src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+          alt="logo tripadvisor"
+        />
+
+        <nav>
+          <div>
+            <a href="#" style="text-decoration: none"
+              ><i class="icon-uniE00F"></i><span>Avis</span></a
+            >
+          </div>
+          <div>
+            <a href="#" style="text-decoration: none"
+              ><i class="icon-uniE011"></i><span>Voyages</span></a
+            >
+          </div>
+          <div>
+            <a href="#" style="text-decoration: none"
+              ><i class="icon-uniE05F"></i><span>Alertes</span></a
+            >
+          </div>
+          <button class="btn-signup">Connectez-vous</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <h1><span>Explorez : </span>Philippines</h1>
+
+      <!-- Menu -->
+      <div class="menu">
+        <div><span>Hôtels</span><i class="icon-uniE000"></i></div>
+        <div>
+          <span>Locations de vacances</span><i class="icon-uniE003"></i>
+        </div>
+        <div><span>Activités</span><i class="icon-uniE002"></i></div>
+        <div><span>Restaurants</span><i class="icon-uniE001"></i></div>
+        <div><span>Forums de vacance</span><i class="icon-uniE006"></i></div>
+        <div><span>Plus</span><i class="icon-uniE091"></i></div>
+      </div>
+
+      <!-- Pictures -->
+      <div class="pictures">
+        <div class="col-1">
+          <img src="./assets/img/img1.jpeg" alt="img-1" />
+          <div><i class="icon-uniE0B1"></i><span>Toutes les photos</span></div>
+        </div>
+        <div class="col-2">
+          <img src="./assets/img/img2.jpeg" alt="img-2" /><img
+            src="./assets/img/img3.jpeg"
+            alt="img-3"
+          />
+        </div>
+      </div>
+
+      <!-- ------ -->
+      <div class="under-pictures">
+        <div>
+          <span>Asie</span>
+          <i class="icon-uniE03B"></i>
+          <div><span>Philippines</span> <i class="icon-uniE04A"></i></div>
+        </div>
+        <div>Visiter : Philippines</div>
+      </div>
+
+      <!-- Info -->
+      <div class="info">
+        <div class="col-1">
+          <h2>Philippines : informations</h2>
+          <p>
+            Avec plus de 7 000 îles jalonnées de rizières, de volcans, de
+            mégapoles, de spots de surf de renommée mondiale et d'une vie
+            sauvage endémique, les Philippines sont l'un des pays les plus
+            éblouissants et variés de toute l'Asie. Et vous y trouverez aussi
+            certaines des plus belles plages du monde.
+          </p>
+        </div>
+        <div class="col-2">
+          <div>
+            <h3>Philippines : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+          <div>
+            <img src="./assets/img/image_trips_card_medium.png" alt="map" />
+          </div>
+        </div>
+      </div>
+
+      <!-- section 1 -->
+      <section class="section-1">
+        <h4>Destinations</h4>
+        <div class="col-carrousel">
+          <div>
+            <img src="./assets/img/manila.jpeg" alt="manila" />
+            <div class="text">Manila, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/drachenfigur-auf-dem.jpeg" alt="cebu" />
+            <div class="text">Cebu City, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/makati.jpeg" alt="makati" />
+            <div class="text">Makati, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/photo5jpg.jpeg" alt="pasay" />
+            <div class="text">Pasay, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/mt-pulag.jpeg" alt="baguio" />
+            <div class="text">Baguio, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/re-discovering-my-fave.jpeg" alt="el nido" />
+            <div class="text">El Nido, Philippines</div>
+          </div>
+
+          <div>
+            <img src="./assets/img/tagaytay.jpeg" alt="tagaytay" />
+            <div class="text">Tagaytay, Philippines</div>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/20161206-141151-largejpg.jpeg"
+              alt="puerto princesa"
+            />
+            <div class="text">Puerto Princesa, Philippines</div>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/university-of-the-philippines.jpeg"
+              alt="quezon city"
+            />
+            <div class="text">Quezon City, Philippines</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="section-2">
+        <h4>Philippines : les immanquables</h4>
+
+        <div>
+          <div class="col-1">
+            <h5>Se reposer</h5>
+            <p>Un mélange de charme, de modernité et de valeurs sûres.</p>
+          </div>
+
+          <!-- Carrousel 1 -->
+          <div class="col-2">
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/el-nido-resorts-lagen.jpeg" alt="" />
+              </div>
+
+              <h6>El Nido Resorts Lagen Island</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>988</span>
+              </div>
+              <p>Palawan, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/summit-ridge-tagaytay.jpg" alt="" />
+              </div>
+
+              <h6>Summit Ridge Tagaytay</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12B"></i>
+                <span>985</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/harolds-hotel.jpg" alt="" />
+              </div>
+
+              <h6>Harolds Hotel</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>844</span>
+              </div>
+              <p>Cebu Island, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/abaca.jpeg" alt="" />
+              </div>
+
+              <h6>Abaca Boutique Resort</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>486</span>
+              </div>
+              <p>Mactan Island, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img
+                  src="./assets/img/newcoasthotelmanila-dining.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <h6>New Coast Hotel Manila</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>3199</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/thealphasuites.jpeg" alt="" />
+              </div>
+
+              <h6>The Alpha Suites</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>416</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/the-manor-at-camp-john.jpg" alt="" />
+              </div>
+
+              <h6>The Manor at Camp John Hay</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>1174</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/citadines-bay-city-manila.jpeg" alt="" />
+              </div>
+
+              <h6>Citadines Bay City Manila</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>475</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/the-cocoon-boutique-hotel.jpg" alt="" />
+              </div>
+
+              <h6>The Cocoon Boutique Hotel</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>794</span>
+              </div>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/astoria.jpeg" alt="" />
+              </div>
+
+              <h6>Astoria Palawan</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>1591</span>
+              </div>
+              <p>Palawan, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Courrasel 2 -->
+        <div>
+          <div class="col-1">
+            <h5>Se restaurer</h5>
+            <p>Lieux incontournables où manger, boire et faire la fête.</p>
+          </div>
+
+          <div class="col-2">
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/nestingtable.jpeg" alt="" />
+              </div>
+
+              <h6>The Nesting Table</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>388</span>
+              </div>
+              <p>€€-€€€ • Saine, Internationale, Végétariens bienvenus</p>
+              <p>Palawan, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/baguio-craft-brewery.jpg" alt="" />
+              </div>
+
+              <h6>Summit Ridge Tagaytay</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>514</span>
+              </div>
+              <p>€€-€€€ • Fusion, Brasserie gastronomique</p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/feria.jpg" alt="" />
+              </div>
+
+              <h6>Harolds Hotel</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>862</span>
+              </div>
+              <p>€€-€€€ • Japonaise, Indienne, Internationale</p>
+              <p>Cebu Island, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/china-blue-by-jereme.jpg" alt="" />
+              </div>
+
+              <h6>China Blue by Jereme Leung</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>703</span>
+              </div>
+              <p>€€€€ • Chinoise, Asiatique, Végétariens bienvenus</p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/antonio.jpeg" alt="" />
+              </div>
+
+              <h6>Antonio's Garden</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>439</span>
+              </div>
+              <p>
+                €€€€ • Végétariens bienvenus, Choix végétariens, Plats sans
+                gluten
+              </p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/engbeetin.jpeg" alt="" />
+              </div>
+
+              <h6>Eng Bee Tin</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>236</span>
+              </div>
+              <p>€ • Chinoise, Choix végétariens, Végétariens bienvenus</p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/nomnom-juicy.jpeg" alt="" />
+              </div>
+
+              <h6>NomNom Comfort Food</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>159</span>
+              </div>
+              <p>€ • Philippine, Café, Fusion</p>
+              <p>Palawan, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/cookpub.jpeg" alt="" />
+              </div>
+
+              <h6>CookPub - Modern Korean Bistro & Bar</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>446</span>
+              </div>
+              <p>€€-€€€ • Bar, Coréenne, Fusion</p>
+              <p>Mactan Island, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/xintandi.jpeg" alt="" />
+              </div>
+
+              <h6>Xin Tian Di</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE12A"></i>
+                <span>340</span>
+              </div>
+              <p>€€€€ • Chinoise, Asiatique, Végétariens bienvenus</p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+
+            <div class="col-carrousel">
+              <div>
+                <img src="./assets/img/benjarong-manila.jpg" alt="" />
+              </div>
+
+              <h6>Benjarong Thai Restaurant</h6>
+              <div class="rating">
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <i class="icon-uniE129"></i>
+                <span>780</span>
+              </div>
+              <p>€€€€ • Asiatique, Thaï, Végétariens bienvenus</p>
+              <p>Luzon, Philippines</p>
+
+              <div class="circle">
+                <i class="icon-uniE011"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <img
+        src="./assets/img/Tripadvisor_logoset_solid_green.svg"
+        alt="small logo"
+      />
+      <p>
+        Made at
+        <a href="https://www.lereacteur.io/" target="_blank">Le Racteur</a> by
+        <a href="https://github.com/acctYann" target="_blank">Yann</a> - 2021
+      </p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+      <div class="form-container">
+        <div>
+          <i class="icon-uniE02C"></i>
+          <img
+            src="./assets/img/Tripadvisor_logoset_solid_green.svg"
+            alt="small logo"
+          />
+          <p>Connectez-vous pour profiter pleinement de Tripadvisor.</p>
+
+          <form id="contactForm">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Prénom"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom"
+            />
+            <input type="email" placeholder="Email" id="email" name="email" />
+
+            <textarea
+              name="message"
+              id="message"
+              cols="50"
+              rows="5"
+              placeholder="Écrivez ici votre message..."
+            ></textarea>
+
+            <input type="submit" value="Envoyer le formulaire" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
